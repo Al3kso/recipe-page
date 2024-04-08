@@ -1,0 +1,131 @@
+/* 
+font-family: "Outfit", sans-serif;
+font-family: "Young Serif", serif;
+ */
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", sans-serif;
+    color: hsl(36, 3%, 34%);
+}
+
+img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 1.7rem;
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 100;
+}
+
+p {
+    font-size: 1rem;
+}
+
+ul, ol {
+    padding: 0 25px;
+}
+
+li {
+    padding: 10px 0 0 15px;
+}
+
+li::marker {
+    font-family: fantasy;
+    font-weight: 100;
+    color: hsl(14, 45%, 36%);
+}
+
+hr {
+    margin: 35px 0;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr{
+    border-bottom: 1px solid hsl(0, 0%, 85%);
+}
+
+table tr:last-child{
+    border-bottom: none;
+}
+
+table td {
+    padding: 15px 30px;
+}
+
+table td strong {
+    color: hsl(14, 45%, 36%);
+}
+
+/* CLASSES */
+.frame {
+    background-color: white;
+    border-radius: 20px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Preparation div */
+.preparation {
+    border-radius: 15px;
+    background-color: hsl(330, 100%, 98%);
+    padding: 25px 35px;
+    margin: 40px 0;
+}
+
+.preparation > h3 {
+    color: hsl(332, 51%, 32%);
+    margin: 0;
+}
+
+.preparation ul {
+    margin: 10px 0 0 0;
+}
+
+.mlr40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* MOBILE VERSION */
+@media (min-width: 320px) and (max-width: 768px){
+    img {
+        width: 100%;
+        border-radius: 0px;
+    }
+    
+    body {
+        background-color: white;
+        margin: 0 0 20px 0;
+
+    }
+
+    .frame {
+        background-color: white;
+        border-radius: 0px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .inner-frame {
+        padding: 0 40px 40px 40px;
+    }
+}
